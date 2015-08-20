@@ -26,6 +26,6 @@ length("dan", "zoe");
 //Calculate the area of a circle for a given radius and diameter.
 var circle = function (radius){
     var area = Math.PI * (radius*radius);
-    console.log(area + " cm");
+    console.log(area + "cm");
 };
 circle(5);
