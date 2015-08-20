@@ -7,7 +7,6 @@ var gallons  = function (MPG, distance){
     console.log(gallonsrequired +" Gallons required");
 };
 gallons(68,5);
-
 //Write a love calculator:
 var length = function (name1, name2)
 {
@@ -17,9 +16,16 @@ var length = function (name1, name2)
         result *=42;
     if (result >100) {
         result = 100;
-        console.log ("Your match is " + result + "%");}
+        console.log ("Your match is " + result + "%");
+    }
     else {
-        console.log("Your match is " + Math.round(result) + "%");}};
+        console.log("Your match is " + Math.round(result) + "%");
+    }
+};
 length("dan", "zoe");
-
 //Calculate the area of a circle for a given radius and diameter.
+var circle = function (radius){
+    var area = Math.PI * (radius*radius);
+    console.log(area + " cm");
+};
+circle(5);
