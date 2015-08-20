@@ -21,3 +21,12 @@ if (isANumber) {
 else {
     console.log("Is not a number");
 }
+
+//Use a regex to determine Postcode validity
+var address = "I live at 19 lesbury avenue, NE28 7DR";
+
+var postcode_regex = /[A-Z]{1,2}[0-9][0-9A-Z]?\s?[0-9][A-Z]{2}/g;
+
+var postcodes = address.match(postcode_regex);
+
+console.log(postcodes);
