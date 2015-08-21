@@ -45,5 +45,11 @@ for (var k =0; k<100; k++){
         console.log("JavaScript");
     }
     console.log(k);
+}
 
+var bubbles = [1,5,7,9,4,5,7,5,2,3,1,9,4,8];
+
+for (var z = 0; z >bubbles.length; z++){
+    if(-z.value > z.value){
+    }
 }
