@@ -18,7 +18,7 @@ console.log(word.search('[AEIOU]'));
 //Use a regex to determine if a given string is a number.
 var foo = function (quxx) {
    quxx = "This contains 1 number";
-    var number = /[1-4]/g;
+    var number = /[1-9]/g;
     if (quxx.match(number)) {
         console.log("Contains a number")
     }
