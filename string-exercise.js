@@ -16,13 +16,15 @@ var word ="JSDFHDVHUEVDAKNDSEINX";
 console.log(word.search('[AEIOU]'));
 
 //Use a regex to determine if a given string is a number.
-var isANumber = isNaN("twenty")=== false;
-if (isANumber) {
-    console.log("Is a number");
-}
-else {
-    console.log("Is not a number");
-}
+var foo = function (quxx) {
+   quxx = "This contains 1 number";
+    var number = /[1-4]/g;
+    if (quxx.match(number)) {
+        console.log("Contains a number")
+    }
+    else {
+        console.log("Does not contain a number");}};
+foo();
 
 //Use a regex to determine Postcode validity
 var address = "I live at 19 lesbury avenue, NE28 7DR";
