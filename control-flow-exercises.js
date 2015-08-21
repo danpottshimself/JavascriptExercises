@@ -32,3 +32,18 @@ for(var i = 1; i < 10; i++) {
     anArray.push(result);
 }
 console.log(anArray);
+
+//Loop of 100 stating Java or Script when divisible by 3 or 5.
+for (var k =0; k<100; k++){
+    if (k%3 ===0 && k%5!=0){
+        console.log("Java");
+    }
+   else if (k%5 ===0 && k%3!=0){
+        console.log("Script");
+    }
+   else  if(k%5 ===0 && k%3===0){
+        console.log("JavaScript");
+    }
+    console.log(k);
+
+}
