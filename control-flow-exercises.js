@@ -47,9 +47,19 @@ for (var k =0; k<100; k++){
     console.log(k);
 }
 
-var bubbles = [1,5,7,9,4,5,7,5,2,3,1,9,4,8];
-
-for (var z = 0; z >bubbles.length; z++){
-    if(-z.value > z.value){
-    }
+//Bubblesort an array
+var numbers = [1,6,23,69,32,42,36,81,100];
+function sortArray(numbers) {
+    var swappedOut;
+    do {
+        swappedOut = false;
+        for (var i=0; i < numbers.length-1; i++) {
+            if (numbers[i] > numbers[i+1]) {
+                var temp = numbers[i];
+                numbers[i] = numbers[i+1];
+                numbers[i+1] = temp;
+                swappedOut = true;}}}
+     while (swappedOut);
 }
+sortArray(numbers);
+console.log(numbers);
