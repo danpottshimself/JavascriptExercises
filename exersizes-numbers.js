@@ -28,22 +28,20 @@ function convertToRadians () {
 convertToRadians();
 
 //finding the hypotenuse length
-var perplength = 8;
+var perpLength = 8;
 var base = 4;
 var oppositeLength= 11;
 var angle = 73;
-var hypoth = ((perplength*perplength) + (base*base));
+var hypoth = ((perpLength*perpLength) + (base*base));
 var hypotenuse = Math.sin(angle)*oppositeLength;
 
 console.log("The Hypotenuse length is: " + Math.round(Math.sqrt(hypoth)));
 console.log("The Hypotenuse length is: " + hypotenuse + " radians");
 
 //rolling a six sided dice
-var Die = function(sides) {
-    this.sides = sides || 6;
+
+var roll = function() {
+    var sides = sides || 6;
+    return Math.floor((Math.random()*sides)+1);
 };
-Die.prototype.roll = function() {
-    return Math.floor((Math.random()*this.sides)+1);
-};
-var die = new Die();
-console.log(die.roll());
+console.log(roll());
