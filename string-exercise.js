@@ -3,8 +3,8 @@
  */
 //hello world
 var theString = "hello world" + " JavaScript can use either “double quotes” or ‘single quotes’ to denote text.";
-var theArray = [theString];
-console.log(theArray[0]);
+var theArray = theString.split(" ");
+console.log(theArray);
 
 //Extracting records from the following CSV
 var records = [1997, "Ford","E350",'"Super luxurious” truck'];
@@ -16,18 +16,22 @@ var word ="JSDFHDVHUEVDAKNDSEINX";
 console.log(word.search('[AEIOU]'));
 
 //Use a regex to determine if a given string is a number.
-var foo = function (quxx) {
-   quxx = "This contains 1 number";
+var numberCheck = function (sentence) {
+   sentence = "This contains 1 number";
     var number = /[0-9]/g;
-    if (quxx.match(number)) {
+    if (sentence.match(number)) {
         console.log("Contains a number")
     }
     else {
         console.log("Does not contain a number");}};
-foo();
+numberCheck();
 
 //Use a regex to determine Postcode validity
-var address = "I live at 19 lesbury avenue, NE28 7DR";
-var postcode_regex = /[A-Z]{1,2}[0-9][0-9A-Z]?\s?[0-9][A-Z]{2}/g;
-var postcodes = address.match(postcode_regex);
-console.log(postcodes);
+function postcodeCheck (postcode){
+     var validPostcode = /^([a-zA-Z]){1}([0-9][0-9]|[0-9]|[a-zA-Z][0-9][a-zA-Z]|[a-zA-Z][0-9][0-9]|[a-zA-Z][0-9]){1}([ ])([0-9][a-zA-z][a-zA-z]){1}$/;
+    if (postcode.match(validPostcode)){
+        console.log("postcode is valid")
+    }
+    else {
+        console.log("postcode is not valid")}}
+postcodeCheck("NE28 7DR");
