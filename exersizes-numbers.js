@@ -13,12 +13,11 @@
 
 
 //converting celsius to farenheit
- function convert (){
- var celsius = 12;
- var fahrenheit = ((celsius * 2) +30);
+ function convert (celsius){
+ var fahrenheit = ((celsius * 9/5) +32);
  console.log(celsius +" degrees celsius equates to: "+fahrenheit + " "+ "fahrenheit");
  }
- convert();
+ convert(12);
 
 //converting celsius to radians
 function convertToRadians () {
