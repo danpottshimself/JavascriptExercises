@@ -1,17 +1,13 @@
-/**
- * Created by daniel.potts on 20/08/15.
- */
 /*
  * Created by daniel.potts on 20/08/15.
  */
 //Fuel calculator: for a given MPG and distance, calculate the number of gallons of fuel needed for a trip.
-var gallons  = function (MPG, distance){
-    var gallonsrequired = (distance / MPG);
-    console.log(gallonsrequired +" Gallons required");};
+var gallons  = function (mpg, distance){
+    var gallonsRequired = (distance / mpg);
+    console.log(gallonsRequired +" Gallons required");};
 gallons(68,5);
 //Write a love calculator:
-var length = function (name1, name2)
-{
+var length = function (name1, name2) {
     var nameLength1 = name1.length,
         nameLength2 =name2.length;
     var result = ((nameLength1 +nameLength2) - (Math.random()* 6));
