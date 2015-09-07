@@ -3,7 +3,7 @@
  */
 //Create a triangle using astrix.
 var numLines = 2;
-var stars = ("*");
+var stars = '*';
 for (var lineNumber = numLines; lineNumber > 0; lineNumber--){
     for (var j = 0; j < lineNumber; j++){
         console.log(stars);
@@ -35,16 +35,18 @@ console.log(anArray);
 
 //Loop of 100 stating Java or Script when divisible by 3 or 5.
 for (var k =0; k<100; k++){
-    if (k%3 ===0 && k%5!=0){
-        console.log("Java");
-    }
-   else if (k%5 ===0 && k%3!=0){
-        console.log("Script");
-    }
-   else  if(k%5 ===0 && k%3===0){
+    if(k%5===0 && k%3===0){
         console.log("JavaScript");
     }
-    console.log(k);
+    else if(k%3 ===0 && k%5!==0){
+        console.log("Java");
+    }
+   else if (k%5===0 && k%3!==0){
+        console.log("Script");
+    }
+    else {
+        console.log(k);
+    }
 }
 
 //Bubblesort an array
