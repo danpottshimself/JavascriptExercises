@@ -32,16 +32,16 @@ var perpLength = 8;
 var base = 4;
 var oppositeLength= 11;
 var angle = 73;
-var hypoth = ((perpLength*perpLength) + (base*base));
+var hypotenuseLength = Math.round(Math.sqrt((perpLength*perpLength) + (base*base)));
 var hypotenuse = Math.sin(angle)*oppositeLength;
 
-console.log("The Hypotenuse length is: " + Math.round(Math.sqrt(hypoth)));
+console.log("The Hypotenuse length is: " + (hypotenuseLength));
 console.log("The Hypotenuse length is: " + hypotenuse + " radians");
 
 //rolling a six sided dice
 
 var roll = function() {
-    var sides = sides || 6;
+    var sides = 6;
     return Math.floor((Math.random()*sides)+1);
 };
 console.log(roll());
