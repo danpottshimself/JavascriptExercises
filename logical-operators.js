@@ -14,7 +14,7 @@ var bigNumber = 13;
 var negcheck = function(value1,value2,value3) {
 var answer = value1 * value2 * value3;
 console.log("The product is" + answer);
-    if (answer > 0) {
+    if (answer >= 0) {
         console.log("Product is positive!");}
     else {
         console.log("Product is negative!");}}
