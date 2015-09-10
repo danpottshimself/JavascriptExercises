@@ -17,14 +17,11 @@ console.log(word.search('[AEIOU]'));
 
 //Use a regex to determine if a given string is a number.
 var numberCheck = function (sentence) {
-   sentence = "This contains 1 number";
-    var number = /[0-9]+/g;
-    if (sentence.match(number)) {
-        console.log("Contains a number")
-    }
-    else {
-        console.log("Does not contain a number");}};
-numberCheck();
+    var number = /^-?\d{2}(\.\d+)?$/;
+   return number.test(sentence);
+};
+console.log(numberCheck("1s") ? "Number is valid" : "Number is Invalid");
+
 
 //Use a regex to determine Postcode validity
 function postcodeCheck (postcode){
